@@ -1,0 +1,216 @@
+.pengisian-jadwal-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pengisian-jadwal-message {
+  font-size: 16px;
+  color: #f44336;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pengisian-jadwal-kelas-list-container,
+.pengisian-jadwal-mata-kuliah-list-container {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #e3f2fd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pengisian-jadwal-kelas-list-container h4,
+.pengisian-jadwal-mata-kuliah-list-container h4 {
+  font-size: 22px;
+  color: #1e88e5;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.pengisian-jadwal-kelas-list,
+.pengisian-jadwal-mata-kuliah-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+/* Pengisian Jadwal Styles */
+.pengisian-jadwal-kelas-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #f4f6f9;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.pengisian-jadwal-kelas-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pengisian-jadwal-kelas-item span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.pengisian-jadwal-kelas-item button {
+  background-color: #5c6bc0;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; /* Prevents text from breaking into new lines */
+}
+
+.pengisian-jadwal-kelas-item button:hover {
+  background-color: #3f51b5;
+}
+
+.pengisian-jadwal-kelas-item button:focus {
+  outline: none;
+}
+
+
+.pengisian-jadwal-mata-kuliah-table th,
+.pengisian-jadwal-mata-kuliah-table td {
+  padding: 12px 18px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.pengisian-jadwal-mata-kuliah-table th {
+  background-color: #1e88e5;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.pengisian-jadwal-mata-kuliah-table td {
+  background-color: #fafafa;
+}
+
+.pengisian-jadwal-mata-kuliah-table tr:nth-child(even) {
+  background-color: #f1f8e9;
+}
+
+.pengisian-jadwal-mata-kuliah-table tr:hover {
+  background-color: #e3f2fd;
+  cursor: pointer;
+}
+
+.pengisian-jadwal-tambah-mata-kuliah-form {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pengisian-jadwal-input,
+.pengisian-jadwal-select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease;
+}
+
+.pengisian-jadwal-input:focus,
+.pengisian-jadwal-select:focus {
+  background-color: #e3f2fd;
+  border-color: #1e88e5;
+  outline: none;
+}
+
+.pengisian-jadwal-tambah-btn {
+  padding: 12px 20px;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.pengisian-jadwal-tambah-btn:hover {
+  background-color: #1565c0;
+}
+
+.pengisian-jadwal-tambah-btn:active {
+  background-color: #0d47a1;
+}
+
+.pengisian-jadwal-tambah-btn:focus {
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Animasi untuk form dan tombol */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.pengisian-jadwal-container,
+.pengisian-jadwal-kelas-list-container,
+.pengisian-jadwal-mata-kuliah-list-container {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .pengisian-jadwal-container {
+    padding: 10px;
+  }
+
+  .pengisian-jadwal-kelas-list-container,
+  .pengisian-jadwal-mata-kuliah-list-container,
+  .pengisian-jadwal-tambah-mata-kuliah-form {
+    padding: 15px;
+  }
+
+  .pengisian-jadwal-mata-kuliah-table th,
+  .pengisian-jadwal-mata-kuliah-table td {
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pengisian-jadwal-input,
+  .pengisian-jadwal-select {
+    font-size: 14px;
+  }
+
+  .pengisian-jadwal-tambah-btn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}

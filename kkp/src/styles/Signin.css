@@ -1,0 +1,130 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Container Styling */
+.signin-container {
+  max-width: 450px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Title Styling */
+.signin-container h2 {
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Subtitle Styling */
+.signin-container p {
+  margin-bottom: 30px;
+  color: #777;
+  font-size: 16px;
+}
+
+/* Form Styling */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Field Styling */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #55a1ca; /* Primary color */
+  outline: none;
+  box-shadow: 0 0 5px rgba(85, 161, 202, 0.3); /* Soft focus effect */
+}
+
+/* Button Styling */
+.submit-btn {
+  padding: 12px;
+  background-color: #55a1ca; /* Primary color */
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #3e8eb9; /* Slightly darker on hover */
+}
+
+/* Error Message Styling */
+.error-message {
+  margin-top: 15px;
+  color: #D8000C;
+  background-color: #FFD2D2;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Form Group Styling */
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .signin-container {
+    padding: 35px 25px;
+  }
+
+  .signin-container h2 {
+    font-size: 26px;
+  }
+
+  .submit-btn {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signin-container {
+    padding: 30px 20px;
+    max-width: 90%;
+  }
+
+  .signin-container h2 {
+    font-size: 22px;
+  }
+
+  .input-field {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,144 @@
+
+.data-murid-container {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.data-murid-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1.5s ease;
+}
+
+.data-murid-select {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 15px;
+  margin: 15px 0;
+  border: 2px solid #2563eb;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.data-murid-select:focus {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 10px rgba(29, 78, 216, 0.5);
+}
+
+.data-murid-message {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.data-murid-table {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  color: #000000;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.data-murid-table th, .data-murid-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.data-murid-table th {
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.data-murid-table tr:hover {
+  background: #f1f5f9;
+}
+
+.data-murid-info {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.data-murid-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  width: 400px;
+  height: 400px;
+  opacity: 0.1;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.data-murid-container > * {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .data-murid-title {
+    font-size: 2rem;
+  }
+
+  .data-murid-select {
+    max-width: 300px;
+  }
+
+  .data-murid-table {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .data-murid-title {
+    font-size: 1.8rem;
+  }
+
+  .data-murid-select {
+    max-width: 250px;
+  }
+
+  .data-murid-container::before {
+    width: 200px;
+    height: 200px;
+  }
+}

@@ -1,0 +1,156 @@
+.register-murid-container {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.register-murid-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1.5s ease;
+}
+
+.register-murid-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  animation: slideUp 1s ease;
+}
+
+.register-murid-input, .register-murid-select {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 2px solid #2563eb;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.register-murid-input:focus, .register-murid-select:focus {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 10px rgba(29, 78, 216, 0.5);
+}
+
+.register-murid-button {
+  background: #2563eb;
+  color: #fff;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.register-murid-button:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.register-murid-message {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.register-murid-message.success {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #10b981;
+}
+
+.register-murid-message.error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #ef4444;
+}
+
+.register-murid-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  width: 350px;
+  height: 350px;
+  opacity: 0.1;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.register-murid-container > * {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .register-murid-title {
+    font-size: 2rem;
+  }
+
+  .register-murid-form {
+    padding: 20px 25px;
+  }
+
+  .register-murid-container::before {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-murid-title {
+    font-size: 1.8rem;
+  }
+
+  .register-murid-container::before {
+    width: 200px;
+    height: 200px;
+  }
+}

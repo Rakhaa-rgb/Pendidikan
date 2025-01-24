@@ -1,0 +1,138 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Container Styling */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #2d719c, #55a1ca); /* Smooth gradient */
+  padding: 20px;
+}
+
+/* Title Styling */
+.register-container h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* Form Styling */
+form {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  border: 2px solid #e1e1e1;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #55a1ca; /* Color match with the theme */
+  box-shadow: 0 0 8px rgba(85, 161, 202, 0.5); /* Soft glowing effect */
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #55a1ca; /* Matching theme color */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #3e8eb9; /* Slightly darker on hover */
+}
+
+/* Message Styling */
+.register-container p {
+  margin-top: 15px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 20px;
+  }
+
+  .register-container h2 {
+    font-size: 2rem; /* Adjusted for smaller screens */
+  }
+
+  form {
+    max-width: 90%;
+    padding: 30px 20px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px 12px;
+  }
+
+  button {
+    font-size: 1rem; /* Ensured button text is responsive */
+  }
+
+  .register-container p {
+    font-size: 12px; /* Adjusted message font size */
+  }
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 480px) {
+  .register-container h2 {
+    font-size: 1.8rem; /* Further adjust font size for very small screens */
+  }
+
+  form {
+    padding: 25px 15px;
+    max-width: 100%;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 1rem; /* Adjust button font size */
+  }
+}

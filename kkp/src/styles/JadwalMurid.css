@@ -1,0 +1,166 @@
+/* JadwalMurid.css */
+
+  .jadwal-murid {
+    padding: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .jadwal-murid h2 {
+    text-align: center;
+    color: #004085;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+  }
+  
+  .jadwal-murid h2:after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #004085;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: #0069d9;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .error {
+    color: #e74c3c;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .no-data {
+    text-align: center;
+    font-size: 18px;
+    color: #6c757d;
+    margin: 20px 0;
+    font-style: italic;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: slideUp 0.5s ease-out;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  table thead {
+    background: linear-gradient(120deg, #004085, #0056b3);
+    color: #ffffff;
+  }
+  
+  table th, table td {
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    transition: background 0.3s ease;
+  }
+  
+  table th {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  table tbody tr:nth-child(odd) {
+    background: #f8f9fa;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background: #e9ecef;
+  }
+  
+  table tbody tr:hover {
+    background: rgba(0, 123, 255, 0.1);
+    transform: scale(1.01);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 10px 20px;
+    background: linear-gradient(120deg, #004085, #007bff);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background: linear-gradient(120deg, #0056b3, #004085);
+    transform: translateY(-3px);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .jadwal-murid {
+      padding: 15px;
+    }
+  
+    table th, table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .jadwal-murid h2 {
+      font-size: 22px;
+    }
+  }
+  
