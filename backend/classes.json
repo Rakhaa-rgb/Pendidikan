@@ -1,0 +1,66 @@
+[
+    {
+        "ruang_kelas": "R1",
+        "guru_email": "rakha@gmail.com",
+        "mata_kuliah": [
+            {
+                "mata_kuliah": "Bahasa Indonesia",
+                "ruang": "gmeet",
+                "hari": "Senin",
+                "jam": "07:00 - 09:00",
+                "tanggal": "2025-01-20",
+                "pertemuan_ke": "1"
+            }
+        ]
+    },
+    {
+        "ruang_kelas": "R2",
+        "guru_email": "rakha@gmail.com",
+        "mata_kuliah": [
+            {
+                "mata_kuliah": "filsafat",
+                "ruang": "gedung 7.3.4",
+                "hari": "Senin",
+                "jam": "07:00 - 09:00",
+                "tanggal": "2025-01-20",
+                "pertemuan_ke": "1"
+            },
+            {
+                "mata_kuliah": "Budaya",
+                "ruang": "gmeet",
+                "hari": "Selasa",
+                "jam": "09:00 - 11:00",
+                "tanggal": "2025-01-28",
+                "pertemuan_ke": "3"
+            }
+        ]
+    },
+    {
+        "ruang_kelas": "R5",
+        "guru_email": "yanto@gmail.com",
+        "mata_kuliah": [
+            {
+                "mata_kuliah": "Inggris",
+                "ruang": "zoom",
+                "hari": "Rabu",
+                "jam": "09:00 - 11:00",
+                "tanggal": "2025-01-22",
+                "pertemuan_ke": "2"
+            }
+        ]
+    },
+    {
+        "ruang_kelas": "R4",
+        "guru_email": "yanto@gmail.com",
+        "mata_kuliah": [
+            {
+                "mata_kuliah": "Sejarah",
+                "ruang": "zoom",
+                "hari": "Selasa",
+                "jam": "11:00 - 13:00",
+                "tanggal": "2025-02-04",
+                "pertemuan_ke": "4"
+            }
+        ]
+    }
+]

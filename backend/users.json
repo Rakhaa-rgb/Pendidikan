@@ -1,0 +1,46 @@
+[
+    {
+        "nama": "rakha",
+        "email": "rakha@gmail.com",
+        "password": "d64201bc3c2927d0a728192cddadae833b776fa302790ed10405905c1aa1f346",
+        "role": "guru"
+    },
+    {
+        "nama": "yanto",
+        "email": "yanto@gmail.com",
+        "password": "2473c6c903469b0cae713acf2ad11c501467451941273767ca809992b4a97268",
+        "role": "guru"
+    },
+    {
+        "nama": "bene",
+        "email": "bene@gmail.com",
+        "password": "77fc577b9d1eb7ce327ef369b80de89cdec0ee0ce611e73b3c71060686e89821",
+        "role": "murid",
+        "guru_email": "rakha@gmail.com",
+        "ruang_kelas": "R1"
+    },
+    {
+        "nama": "jono", 
+        "email": "jono@gmail.com",
+        "password": "80e8e380eab7357a269f61676fb948c2ca9dbbf5a8137538ee2daea30b517c2a",
+        "role": "murid",
+        "guru_email": "rakha@gmail.com",
+        "ruang_kelas": "R2"
+    },
+    {
+        "nama": "jojo",
+        "email": "jojo@gmail.com",
+        "password": "54af2a2960e582263c45971cdd40da4ae31ede1db5395629d910f056479de12d",
+        "role": "murid",
+        "guru_email": "yanto@gmail.com",
+        "ruang_kelas": "R5"
+    },
+    {
+        "nama": "yeyen",
+        "email": "yeyen@gmail.com",
+        "password": "86345269038cf1d4e5283a3d82eebf618b1ea64c814a80e82d877b1a6a496501",
+        "role": "murid",
+        "guru_email": "rakha@gmail.com",
+        "ruang_kelas": "R2"
+    }
+]
